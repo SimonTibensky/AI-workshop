@@ -70,6 +70,8 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: -10%;
+  /* Toto ho posunie viac doľava */
 }
 
 .nav-logo img {
@@ -394,6 +396,10 @@ textarea:focus {
     overflow: auto !important;
     height: auto !important;
     overscroll-behavior-y: contain;
+  }
+
+  .nav-logo {
+    margin-left: 0 !important;
   }
 
   .hero {
