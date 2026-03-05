@@ -515,7 +515,8 @@ textarea:focus {
 
   .glass-panel {
     padding: 20px;
-    margin: 0 5px;
+    margin: 0 auto;
+    width: 95% !important;
   }
 
   h1 {
@@ -552,12 +553,24 @@ textarea:focus {
 
   .info-item,
   .subject-card {
-    padding: 15px !important;
+    padding: 12px !important;
+  }
+
+  .subject-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
   }
 
   .subject-card {
     width: 100% !important;
-    max-width: 280px;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+
+  .subject-card h3 {
+    font-size: 0.9rem !important;
   }
 
   /* Scale down hero spatial card */
