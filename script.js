@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             q: "Prídete aj k nám na školu?",
 
-            a: "Áno. Po dohode vieme zorganizovať workshop priamo u vás na škole — kdekoľvek na Slovensku.",
+            a: "Áno. Po dohode vieme zorganizovať workshop priamo u vás na škole kdekoľvek na Slovensku.",
 
         },
 

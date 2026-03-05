@@ -28,7 +28,7 @@
                     <a href="#process" data-target="anchor-process">Priebeh</a>
                     <a href="#subjects" data-target="anchor-subjects">Pre koho</a>
                     <a href="#faq" data-target="anchor-faq">FAQ</a>
-                    <a href="#register" data-target="anchor-register">Registrácia</a>
+                    <a href="#register" data-target="anchor-register" class="nav-register-btn">Registrácia</a>
                 </div>
                 <!-- Hamburger Menu -->
                 <div class="menu-toggle" id="mobile-menu">
@@ -44,12 +44,11 @@
             <div id="anchor-hero"
                 style="height: 1px; margin-bottom: -1px; scroll-snap-align: start; scroll-snap-stop: always; opacity: 0; pointer-events: none;"
                 aria-hidden="true"></div>
-            <section class="hero panel-1" style="padding-top: 70px;">
+            <section class="hero panel-1">
                 <div class="container">
                     <div class="grid grid-2" style="align-items: center;">
                         <div>
-                            <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px;"
-                                class="title-gradient">
+                            <h1 style="margin-bottom: 1.5rem;" class="title-gradient">
                                 AI workshop <br> pre učiteľov stredných škol
                             </h1>
                             <p
@@ -92,7 +91,7 @@
             <section id="about" class="panel-2">
                 <div class="container">
                     <div style="text-align: center; margin-bottom: 60px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Čo vás naučíme</h2>
+                        <h2 style="margin-bottom: 1rem;">Čo vás naučíme</h2>
                         <p style="color: var(--text-slate); font-size: 1.1rem;">V zrozumiteľnej teoretickej časti si
                             ujasníte, ako AI funguje, aké má limity a ako ju používať bezpečne. <br> Následne vám
                             predstavíme
@@ -147,7 +146,7 @@
             <section id="process" class="panel-info" style="padding: 80px 0;">
                 <div class="container">
                     <div style="text-align: center; margin-bottom: 60px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Ako prebieha školenie</h2>
+                        <h2 style="margin-bottom: 1rem;">Ako prebieha školenie</h2>
                         <p style="color: var(--text-slate); font-size: 1.1rem;">Všetko, čo potrebujete vedieť o
                             organizácii.</p>
                     </div>
@@ -183,7 +182,7 @@
             <section id="subjects" class="panel-subjects" style="padding: 100px 0;">
                 <div class="container">
                     <div style="text-align: center; margin-bottom: 60px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 24px;">Pre koho je školenie určené?</h2>
+                        <h2 style="margin-bottom: 1.5rem;">Pre koho je školenie určené?</h2>
                         <p style="color: var(--text-slate); font-size: 1.15rem; max-width: 800px; margin: 0 auto 32px;">
                             Pre učiteľov a učiteľky stredných škôl, ktorí chcú mať v AI jasno a používať ju zmysluplne v
                             praxi bez ohľadu na ich zameranie. Je ideálne pre pedagógov, ktorí chcú:
@@ -218,104 +217,73 @@
                 </div>
             </section>
 
-            <!-- FAQ Section -->
-            <div id="anchor-faq"
-                style="height: 1px; margin-bottom: -1px; scroll-snap-align: start; scroll-snap-stop: always; opacity: 0; pointer-events: none;"
-                aria-hidden="true"></div>
-            <section id="faq" class="panel-faq" style="padding: 100px 0;">
-                <div class="container">
-                    <div style="text-align: center; margin-bottom: 60px;">
-                        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Časté otázky (FAQ)</h2>
-                        <p style="color: var(--text-slate); font-size: 1.1rem;">Všetko, čo by vás mohlo zaujímať pred
-                            registráciou.</p>
-                    </div>
-                    <div class="faq-container" id="faq-list">
-                        <!-- FAQ items will be added here via JS or hardcoded -->
-                    </div>
-                </div>
-            </section>
-
             <!-- Registration Section -->
             <div id="anchor-register"
-                style="height: 35px; margin-bottom: -1px; scroll-snap-align: start; scroll-snap-stop: always; opacity: 0; pointer-events: none;"
+                style="height: 5vh; margin-bottom: -50px; scroll-snap-align: start; scroll-snap-stop: always; opacity: 0; pointer-events: none;"
                 aria-hidden="true"></div>
-            <section id="register" class="panel-4"
-                style="height: 100vh; padding: 30px 0; border-top: none; position: relative;">
+            <section id="register" class="panel-4" style="border-top: none; position: relative;">
                 <div class="container">
-                    <div class="glass-panel" style="max-width: 900px; margin: 0 auto; padding: 20px 40px;">
-                        <div style="text-align: center; margin-bottom: 15px;">
-                            <h2 style="font-size: 1.8rem; margin-bottom: 5px;">Registrácia Školy</h2>
-                            <p style="color: var(--text-slate); font-size: 0.95rem; margin-bottom: 0;">Pošlite nám
-                                krátku motivačnú správu
-                                a my sa vám ozveme.</p>
+                    <div class="glass-panel">
+                        <div style="text-align: center;">
+                            <h2>Registrácia Školy</h2>
+                            <p style="color: var(--text-slate); margin-bottom: 0;">Pošlite nám krátku motivačnú správu a
+                                my sa vám ozveme.</p>
                         </div>
 
                         <form id="registration-form">
-                            <div class="grid grid-2" style="gap: 12px;">
+                            <div class="grid grid-2">
                                 <div class="form-group" style="margin-bottom: 10px;">
                                     <label style="font-size: 0.9rem; margin-bottom: 4px;">Názov Strednej Školy</label>
-                                    <input type="text" name="schoolName" placeholder="Napr. Gymnázium Vazovova" required
-                                        style="padding: 10px;">
+                                    <input type="text" name="schoolName" placeholder="Napr. Gymnázium Vazovova"
+                                        required>
                                 </div>
-                                <div class="form-group" style="margin-bottom: 10px;">
-                                    <label style="font-size: 0.9rem; margin-bottom: 4px;">Adresa Školy</label>
-                                    <input type="text" name="schoolAddress" placeholder="Ulica, Mesto, PSČ" required
-                                        style="padding: 10px;">
-                                </div>
-                            </div>
-
-                            <div class="grid grid-2" style="gap: 12px;">
-                                <div class="form-group" style="margin-bottom: 10px;">
-                                    <label style="font-size: 0.9rem; margin-bottom: 4px;">Váš Pracovný Email</label>
-                                    <input type="email" name="email" placeholder="meno@skola.sk" required
-                                        style="padding: 10px;">
-                                </div>
-                                <div class="form-group" style="margin-bottom: 10px;">
-                                    <label style="font-size: 0.9rem; margin-bottom: 4px;">Telefónne číslo</label>
-                                    <input type="tel" name="phone" placeholder="+421 900 000 000" required
-                                        style="padding: 10px;">
+                                <div class="form-group">
+                                    <label>Adresa Školy</label>
+                                    <input type="text" name="schoolAddress" placeholder="Ulica, Mesto, PSČ" required>
                                 </div>
                             </div>
 
-                            <div class="grid grid-2" style="gap: 12px;">
-                                <div class="form-group" style="margin-bottom: 10px;">
-                                    <label style="font-size: 0.9rem; margin-bottom: 4px;">Kontaktná Osoba</label>
-                                    <input type="text" name="contactPerson" placeholder="Mgr. Jozef Učiteľ" required
-                                        style="padding: 10px;">
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label>Váš Pracovný Email</label>
+                                    <input type="email" name="email" placeholder="meno@skola.sk" required>
                                 </div>
-                                <div class="form-group" style="margin-bottom: 10px;">
-                                    <label style="font-size: 0.9rem; margin-bottom: 4px;">Približný počet
-                                        učiteľov</label>
-                                    <input type="text" name="teacherCount" placeholder="Napr. 25" required
-                                        style="padding: 10px;">
+                                <div class="form-group">
+                                    <label>Telefónne číslo</label>
+                                    <input type="tel" name="phone" placeholder="+421 900 000 000" required>
                                 </div>
                             </div>
 
-                            <div class="form-group" style="margin-bottom: 10px;">
-                                <label style="font-size: 0.9rem; margin-bottom: 4px;">Preferovaná forma školenia</label>
-                                <div
-                                    style="display: flex; gap: 20px; margin-top: 2px; background: rgba(30, 27, 75, 0.3); padding: 8px 15px; border-radius: 12px; border: 1px solid var(--glass-border);">
-                                    <label
-                                        style="display: flex; align-items: center; gap: 8px; margin-bottom: 0; cursor: pointer; font-size: 0.9rem;">
-                                        <input type="radio" name="trainingFormat" value="onsite" required
-                                            style="width: 16px; height: 16px; accent-color: var(--primary);">
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label>Kontaktná Osoba</label>
+                                    <input type="text" name="contactPerson" placeholder="Mgr. Jozef Učiteľ" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Približný počet učiteľov</label>
+                                    <input type="text" name="teacherCount" placeholder="Napr. 25" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Preferovaná forma školenia</label>
+                                <div class="radio-group-container">
+                                    <label>
+                                        <input type="radio" name="trainingFormat" value="onsite" required>
                                         Priamo u nás na škole
                                     </label>
-                                    <label
-                                        style="display: flex; align-items: center; gap: 8px; margin-bottom: 0; cursor: pointer; font-size: 0.9rem;">
-                                        <input type="radio" name="trainingFormat" value="online" required
-                                            style="width: 16px; height: 16px; accent-color: var(--primary);">
+                                    <label>
+                                        <input type="radio" name="trainingFormat" value="online" required>
                                         Online
                                     </label>
                                 </div>
                             </div>
 
-                            <div class="form-group" style="margin-bottom: 10px;">
-                                <label style="font-size: 0.9rem; margin-bottom: 4px;">Prečo si máme vybrať práve vašu
-                                    školu?</label>
+                            <div class="form-group">
+                                <label>Prečo si máme vybrať práve vašu školu?</label>
                                 <textarea name="motivation" id="motivation-text" rows="2"
-                                    placeholder="Napíšte nám krátko o vašom záujme..." maxlength="400" required
-                                    style="padding: 10px;"></textarea>
+                                    placeholder="Napíšte nám krátko o vašom záujme..." maxlength="400"
+                                    required></textarea>
                                 <div style="text-align: right; font-size: 0.75rem; margin-top: 2px;" id="char-count">
                                     0 / 400
                                 </div>
@@ -325,8 +293,7 @@
                                 <div class="progress-bar" id="form-progress" style="width: 0%;"></div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary"
-                                style="width: 100%; height: 44px; font-size: 0.95rem;" id="submit-btn">
+                            <button type="submit" class="btn btn-primary" id="submit-btn">
                                 Odoslať Registráciu
                             </button>
 
@@ -337,6 +304,22 @@
                     </div>
                 </div>
             </section>
+
+            <!-- FAQ Section -->
+            <div id="anchor-faq"
+                style="height: 5vh; margin-bottom: -1px; scroll-snap-align: start; scroll-snap-stop: always; opacity: 0; pointer-events: none;"
+                aria-hidden="true"></div>
+            <section id="faq" class="panel-faq">
+                <div class="container">
+                    <div style="text-align: center;">
+                        <h2>Časté otázky (FAQ)</h2>
+                    </div>
+                    <div class="faq-container" id="faq-list">
+                        <!-- FAQ items will be added here via JS or hardcoded -->
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
     <script src="script.js"></script>
